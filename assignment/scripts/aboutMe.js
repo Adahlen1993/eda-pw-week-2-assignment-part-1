@@ -75,7 +75,11 @@ console.log(petStatus)
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-
+let mostPets = "";
+if(pets > friendsPets){mostPets = pets;}
+else if(pets < friendsPets){mostPets = friendsPets;}
+else{mostPets = "Equal";}
+console.log(mostPets)
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -84,6 +88,17 @@ console.log(petStatus)
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+let luckyResult = "";
+  switch(luckyNumber){
+    case 1: luckyResult = "First is the worst"
+      break;
+    case 2: luckyResult = "Second is the best"
+      break;
+    case 3: luckyResult = "Third is the one with the polka dot dress"
+      break;
+    default: luckyResult ="Luck is what happens when preparation meets opportunity"
+  ;}
+console.log(luckyResult)
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
