@@ -41,18 +41,18 @@ const allowedPets = 6;
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = "Adventures are great!";
-if(adventurous){result;}
-else{result = "How about we stay home?";}
+let result;
+  if(adventurous){result = "Adventures are great!"}
+  else{result = "How about we stay home?";}
 console.log(result)
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-let diceRoll = "Try again later.";
-if(luckyNumber === 2 && adventurous){diceRoll = "Roll the Dice";}
-else{diceRoll;}
+let diceRoll = "Try again later."
+  if(luckyNumber === 2 && adventurous){diceRoll = "Roll the Dice";}
+  else{diceRoll;}
 console.log(diceRoll)
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -62,10 +62,10 @@ console.log(diceRoll)
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = "";
-if(pets < allowedPets){petStatus = "I can have more pets";}
-else if(pets === allowedPets){petStatus = "I have enough pets";}
-else{petStatus = "oh no, I have too many pets!";}
+let petStatus;
+  if(pets < allowedPets){petStatus = "I can have more pets";}
+  else if(pets === allowedPets){petStatus = "I have enough pets";}
+  else{petStatus = "oh no, I have too many pets!";}
 console.log(petStatus)
 
 // STRETCH GOALS:
@@ -75,10 +75,10 @@ console.log(petStatus)
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-let mostPets = "";
-if(pets > friendsPets){mostPets = pets;}
-else if(pets < friendsPets){mostPets = friendsPets;}
-else{mostPets = "Equal";}
+let mostPets;
+  if(pets > friendsPets){mostPets = pets;}
+  else if(pets < friendsPets){mostPets = friendsPets;}
+  else{mostPets = "Equal";}
 console.log(mostPets)
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -88,7 +88,7 @@ console.log(mostPets)
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
-let luckyResult = "";
+let luckyResult;
   switch(luckyNumber){
     case 1: luckyResult = "First is the worst"
       break;
