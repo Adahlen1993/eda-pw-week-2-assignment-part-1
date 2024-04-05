@@ -52,7 +52,6 @@ console.log(result)
 //      Console log the value of `diceRoll`
 let diceRoll = "Try again later."
   if(luckyNumber === 2 && adventurous){diceRoll = "Roll the Dice";}
-  else{diceRoll;}
 console.log(diceRoll)
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -76,9 +75,9 @@ console.log(petStatus)
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 let mostPets;
-  if(pets > friendsPets){mostPets = pets;}
-  else if(pets < friendsPets){mostPets = friendsPets;}
-  else{mostPets = "Equal";}
+  if(pets > friendsPets){mostPets = pets;
+  } else if(pets < friendsPets){mostPets = friendsPets;
+  } else{mostPets === equal;}
 console.log(mostPets)
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
